@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Interface FSHL\Output | FSHL - Fast Syntax Highlighter</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?881686471"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-932320-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-FSHL.html">FSHL</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-FSHL.Lexer.html">Lexer</a>
+						</li>
+				<li><a href="namespace-FSHL.Output.html">Output</a>
+						</li>
+							</ul></li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-FSHL.Generator.html">Generator</a></li>
+				<li><a href="class-FSHL.Highlighter.html">Highlighter</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-FSHL.Lexer.html">Lexer</a></li>
+				<li class="active"><a href="class-FSHL.Output.html">Output</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Interface Output</h1>
+
+	<div class="description">
+	
+<p>Output interface.</p>
+
+	</div>
+
+
+
+
+	<div>
+		<h4>Direct Known Implementers</h4>
+			<a href="class-FSHL.Output.Html.html">FSHL\Output\Html</a>, 
+			<a href="class-FSHL.Output.HtmlManual.html">FSHL\Output\HtmlManual</a>
+	</div>
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-FSHL.html">FSHL</a><br />
+
+				<b>Copyright:</b>
+				Copyright (c) 2002-2005 Juraj 'hvge' Durech<br />
+				<b>Copyright:</b>
+				Copyright (c) 2011 Jaroslav Hanslík<br />
+				<b>License:</b>
+				<a
+href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/kukulich/fshl/blob/master/LICENSE</a><br />
+		<b>Located at</b> <a href="source-FSHL.Output.html#26" title="Go to source code">Output.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="template" id="_template">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_template">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Output.html#35" title="Go to source code">template</a>(
+				string
+				<var>$word</var>, 
+				string
+				<var>$class</var>
+		)</code>
+
+		<div class="short">
+			Outputs a template part.
+		</div>
+
+		<div class="detailed">
+			
+<p>Outputs a template part.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$word</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="keyword" id="_keyword">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_keyword">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Output.html#44" title="Go to source code">keyword</a>(
+				string
+				<var>$word</var>, 
+				string
+				<var>$class</var>
+		)</code>
+
+		<div class="short">
+			Outputs a keyword.
+		</div>
+
+		<div class="detailed">
+			
+<p>Outputs a keyword.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$word</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$class</var></dt>
+					<dd><code>string</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+</div>
+
+		<div id="footer">
+			FSHL - Fast Syntax Highlighter API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

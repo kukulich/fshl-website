@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Interface FSHL\Lexer | FSHL - Fast Syntax Highlighter</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?881686471"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-932320-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-FSHL.html">FSHL</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-FSHL.Lexer.html">Lexer</a>
+						</li>
+				<li><a href="namespace-FSHL.Output.html">Output</a>
+						</li>
+							</ul></li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-FSHL.Generator.html">Generator</a></li>
+				<li><a href="class-FSHL.Highlighter.html">Highlighter</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li class="active"><a href="class-FSHL.Lexer.html">Lexer</a></li>
+				<li><a href="class-FSHL.Output.html">Output</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Interface Lexer</h1>
+
+	<div class="description">
+	
+<p>Lexer interface.</p>
+
+	</div>
+
+
+
+
+	<div>
+		<h4>Direct Known Implementers</h4>
+			<a href="class-FSHL.Lexer.Cpp.html">FSHL\Lexer\Cpp</a>, 
+			<a href="class-FSHL.Lexer.Css.html">FSHL\Lexer\Css</a>, 
+			<a href="class-FSHL.Lexer.Texy.html">FSHL\Lexer\Texy</a>, 
+			<a href="class-FSHL.Lexer.Html.html">FSHL\Lexer\Html</a>, 
+			<a href="class-FSHL.Lexer.HtmlOnly.html">FSHL\Lexer\HtmlOnly</a>, 
+			<a href="class-FSHL.Lexer.Java.html">FSHL\Lexer\Java</a>, 
+			<a href="class-FSHL.Lexer.Javascript.html">FSHL\Lexer\Javascript</a>, 
+			<a href="class-FSHL.Lexer.Minimal.html">FSHL\Lexer\Minimal</a>, 
+			<a href="class-FSHL.Lexer.Php.html">FSHL\Lexer\Php</a>, 
+			<a href="class-FSHL.Lexer.Python.html">FSHL\Lexer\Python</a>, 
+			<a href="class-FSHL.Lexer.Sql.html">FSHL\Lexer\Sql</a>
+	</div>
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-FSHL.html">FSHL</a><br />
+
+				<b>Subpackage:</b>
+				Lexer<br />
+				<b>Copyright:</b>
+				Copyright (c) 2002-2005 Juraj 'hvge' Durech<br />
+				<b>Copyright:</b>
+				Copyright (c) 2011 Jaroslav Hanslík<br />
+				<b>License:</b>
+				<a
+href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/kukulich/fshl/blob/master/LICENSE</a><br />
+		<b>Located at</b> <a href="source-FSHL.Lexer.html#26" title="Go to source code">Lexer.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="getLanguage" id="_getLanguage">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getLanguage">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Lexer.html#36" title="Go to source code">getLanguage</a>(
+		)</code>
+
+		<div class="short">
+			Returns language name.
+		</div>
+
+		<div class="detailed">
+			
+<p>Returns language name.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getInitialState" id="_getInitialState">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getInitialState">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Lexer.html#43" title="Go to source code">getInitialState</a>(
+		)</code>
+
+		<div class="short">
+			Returns initial state.
+		</div>
+
+		<div class="detailed">
+			
+<p>Returns initial state.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getStates" id="_getStates">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getStates">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Lexer.html#50" title="Go to source code">getStates</a>(
+		)</code>
+
+		<div class="short">
+			Returns states.
+		</div>
+
+		<div class="detailed">
+			
+<p>Returns states.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getDelimiters" id="_getDelimiters">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getDelimiters">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Lexer.html#57" title="Go to source code">getDelimiters</a>(
+		)</code>
+
+		<div class="short">
+			Returns special delimiters.
+		</div>
+
+		<div class="detailed">
+			
+<p>Returns special delimiters.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getKeywords" id="_getKeywords">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			array
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getKeywords">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Lexer.html#64" title="Go to source code">getKeywords</a>(
+		)</code>
+
+		<div class="short">
+			Returns keywords.
+		</div>
+
+		<div class="detailed">
+			
+<p>Returns keywords.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>array</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+
+
+
+</div>
+
+		<div id="footer">
+			FSHL - Fast Syntax Highlighter API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

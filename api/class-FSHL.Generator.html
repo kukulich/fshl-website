@@ -1,0 +1,768 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class FSHL\Generator | FSHL - Fast Syntax Highlighter</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?881686471"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-932320-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-FSHL.html">FSHL</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-FSHL.Lexer.html">Lexer</a>
+						</li>
+				<li><a href="namespace-FSHL.Output.html">Output</a>
+						</li>
+							</ul></li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li class="active"><a href="class-FSHL.Generator.html">Generator</a></li>
+				<li><a href="class-FSHL.Highlighter.html">Highlighter</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-FSHL.Lexer.html">Lexer</a></li>
+				<li><a href="class-FSHL.Output.html">Output</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class Generator</h1>
+
+	<div class="description">
+	
+<p>Generator of lexer cache files.</p>
+
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-FSHL.html">FSHL</a><br />
+
+				<b>Copyright:</b>
+				Copyright (c) 2002-2005 Juraj 'hvge' Durech<br />
+				<b>Copyright:</b>
+				Copyright (c) 2011 Jaroslav Hanslík<br />
+				<b>License:</b>
+				<a
+href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/kukulich/fshl/blob/master/LICENSE</a><br />
+		<b>Located at</b> <a href="source-FSHL.Generator.html#26" title="Go to source code">Generator.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#___construct">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Generator.html#245" title="Go to source code">__construct</a>(
+				<a href="class-FSHL.Lexer.html">FSHL\Lexer</a>
+				
+				<var>$lexer</var>
+		)</code>
+
+		<div class="short">
+			Initializes the generator for a given lexer.
+		</div>
+
+		<div class="detailed">
+			
+<p>Initializes the generator for a given lexer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$lexer</var></dt>
+					<dd><code><code><a href="class-FSHL.Lexer.html">FSHL\Lexer</a></code></code><br />$lexerName</dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="getSource" id="_getSource">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_getSource">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Generator.html#257" title="Go to source code">getSource</a>(
+		)</code>
+
+		<div class="short">
+			Returns the generated source.
+		</div>
+
+		<div class="detailed">
+			
+<p>Returns the generated source.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="saveToCache" id="_saveToCache">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-FSHL.Generator.html">FSHL\Generator</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_saveToCache">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Generator.html#267" title="Go to source code">saveToCache</a>(
+		)</code>
+
+		<div class="short">
+			Saves the generated source to a lexer cache file.
+		</div>
+
+		<div class="detailed">
+			
+<p>Saves the generated source to a lexer cache file.</p>
+
+
+
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-FSHL.Generator.html">FSHL\Generator</a></code></code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="smallList">
+					<code>RuntimeException</code><br />If the file could not be saved.<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="BACK" id="BACK">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#35" title="Go to source code"><b>BACK</b></a>
+		</code></td>
+		<td width="1%"><code>-<span class="php-num">1</span></code></td>
+		<td><div class="position">
+			<a href="#BACK" class="anchor">#</a>
+			<div class="short">
+				Delimiter will be returned to the stream (back to the previous position).
+			</div>
+
+			<div class="detailed">
+				
+<p>Delimiter will be returned to the stream (back to the previous position).</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CURRENT" id="CURRENT">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#42" title="Go to source code"><b>CURRENT</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><div class="position">
+			<a href="#CURRENT" class="anchor">#</a>
+			<div class="short">
+				Style from current state will be applied on the received delimiter.
+			</div>
+
+			<div class="detailed">
+				
+<p>Style from current state will be applied on the received delimiter.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="NEXT" id="NEXT">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#49" title="Go to source code"><b>NEXT</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><div class="position">
+			<a href="#NEXT" class="anchor">#</a>
+			<div class="short">
+				Style from the new state will be applied on the received delimiter.
+			</div>
+
+			<div class="detailed">
+				
+<p>Style from the new state will be applied on the received delimiter.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_SELF" id="STATE_SELF">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			string
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#56" title="Go to source code"><b>STATE_SELF</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-quote">'_SELF'</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_SELF" class="anchor">#</a>
+			<div class="short">
+				State leading to the current state.
+			</div>
+
+			<div class="detailed">
+				
+<p>State leading to the current state.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_RETURN" id="STATE_RETURN">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			string
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#63" title="Go to source code"><b>STATE_RETURN</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-quote">'_RETURN'</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_RETURN" class="anchor">#</a>
+			<div class="short">
+				State to return to previous state.
+			</div>
+
+			<div class="detailed">
+				
+<p>State to return to previous state.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_QUIT" id="STATE_QUIT">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			string
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#70" title="Go to source code"><b>STATE_QUIT</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-quote">'_QUIT'</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_QUIT" class="anchor">#</a>
+			<div class="short">
+				State to quit the current state.
+			</div>
+
+			<div class="detailed">
+				
+<p>State to quit the current state.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_FLAG_NONE" id="STATE_FLAG_NONE">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#77" title="Go to source code"><b>STATE_FLAG_NONE</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_FLAG_NONE" class="anchor">#</a>
+			<div class="short">
+				Default state flag.
+			</div>
+
+			<div class="detailed">
+				
+<p>Default state flag.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_FLAG_KEYWORD" id="STATE_FLAG_KEYWORD">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#84" title="Go to source code"><b>STATE_FLAG_KEYWORD</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0x0001</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_FLAG_KEYWORD" class="anchor">#</a>
+			<div class="short">
+				State flag for keyword.
+			</div>
+
+			<div class="detailed">
+				
+<p>State flag for keyword.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_FLAG_RECURSION" id="STATE_FLAG_RECURSION">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#91" title="Go to source code"><b>STATE_FLAG_RECURSION</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0x0004</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_FLAG_RECURSION" class="anchor">#</a>
+			<div class="short">
+				State flag for recursion.
+			</div>
+
+			<div class="detailed">
+				
+<p>State flag for recursion.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_FLAG_NEWLEXER" id="STATE_FLAG_NEWLEXER">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#98" title="Go to source code"><b>STATE_FLAG_NEWLEXER</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0x0008</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_FLAG_NEWLEXER" class="anchor">#</a>
+			<div class="short">
+				State flag for new language.
+			</div>
+
+			<div class="detailed">
+				
+<p>State flag for new language.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_INDEX_DIAGRAM" id="STATE_INDEX_DIAGRAM">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#105" title="Go to source code"><b>STATE_INDEX_DIAGRAM</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_INDEX_DIAGRAM" class="anchor">#</a>
+			<div class="short">
+				Array index for state diagram.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for state diagram.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_INDEX_FLAGS" id="STATE_INDEX_FLAGS">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#112" title="Go to source code"><b>STATE_INDEX_FLAGS</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_INDEX_FLAGS" class="anchor">#</a>
+			<div class="short">
+				Array index for state flags.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for state flags.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_INDEX_CLASS" id="STATE_INDEX_CLASS">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#119" title="Go to source code"><b>STATE_INDEX_CLASS</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">2</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_INDEX_CLASS" class="anchor">#</a>
+			<div class="short">
+				Array index for state class.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for state class.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_INDEX_DATA" id="STATE_INDEX_DATA">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#126" title="Go to source code"><b>STATE_INDEX_DATA</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">3</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_INDEX_DATA" class="anchor">#</a>
+			<div class="short">
+				Array index for state data.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for state data.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_DIAGRAM_INDEX_STATE" id="STATE_DIAGRAM_INDEX_STATE">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#133" title="Go to source code"><b>STATE_DIAGRAM_INDEX_STATE</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_DIAGRAM_INDEX_STATE" class="anchor">#</a>
+			<div class="short">
+				Array index for new state in state diagram.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for new state in state diagram.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="STATE_DIAGRAM_INDEX_MODE" id="STATE_DIAGRAM_INDEX_MODE">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#140" title="Go to source code"><b>STATE_DIAGRAM_INDEX_MODE</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><div class="position">
+			<a href="#STATE_DIAGRAM_INDEX_MODE" class="anchor">#</a>
+			<div class="short">
+				Array index for mode in state diagram.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for mode in state diagram.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="KEYWORD_INDEX_CLASS" id="KEYWORD_INDEX_CLASS">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			interger
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#147" title="Go to source code"><b>KEYWORD_INDEX_CLASS</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><div class="position">
+			<a href="#KEYWORD_INDEX_CLASS" class="anchor">#</a>
+			<div class="short">
+				Array index for keyword class.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for keyword class.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="KEYWORD_INDEX_LIST" id="KEYWORD_INDEX_LIST">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			interger
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#154" title="Go to source code"><b>KEYWORD_INDEX_LIST</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><div class="position">
+			<a href="#KEYWORD_INDEX_LIST" class="anchor">#</a>
+			<div class="short">
+				Array index for list of keywords.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for list of keywords.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="KEYWORD_INDEX_CASE_SENSITIVE" id="KEYWORD_INDEX_CASE_SENSITIVE">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			interger
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#161" title="Go to source code"><b>KEYWORD_INDEX_CASE_SENSITIVE</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">2</span></code></td>
+		<td><div class="position">
+			<a href="#KEYWORD_INDEX_CASE_SENSITIVE" class="anchor">#</a>
+			<div class="short">
+				Array index for information if keywords are case-sensitive.
+			</div>
+
+			<div class="detailed">
+				
+<p>Array index for information if keywords are case-sensitive.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CASE_SENSITIVE" id="CASE_SENSITIVE">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			boolean
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#168" title="Go to source code"><b>CASE_SENSITIVE</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-keyword1">true</span></code></td>
+		<td><div class="position">
+			<a href="#CASE_SENSITIVE" class="anchor">#</a>
+			<div class="short">
+				Flag case-sensitive.
+			</div>
+
+			<div class="detailed">
+				
+<p>Flag case-sensitive.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="CASE_INSENSITIVE" id="CASE_INSENSITIVE">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			boolean
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Generator.html#175" title="Go to source code"><b>CASE_INSENSITIVE</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-keyword1">false</span></code></td>
+		<td><div class="position">
+			<a href="#CASE_INSENSITIVE" class="anchor">#</a>
+			<div class="short">
+				Flag case-insensitive.
+			</div>
+
+			<div class="detailed">
+				
+<p>Flag case-insensitive.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+		<div id="footer">
+			FSHL - Fast Syntax Highlighter API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>

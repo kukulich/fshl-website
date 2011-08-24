@@ -1,0 +1,457 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="generator" content="ApiGen 2.0.3" />
+
+	<title>Class FSHL\Highlighter | FSHL - Fast Syntax Highlighter</title>
+
+	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
+	<script type="text/javascript" src="elementlist.js?881686471"></script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+
+	<script type="text/javascript">
+		var _gaq = _gaq || [];
+		_gaq.push(['_setAccount', "UA-932320-2"]);
+		_gaq.push(['_trackPageview']);
+
+		(function() {
+			var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+			ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+			var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+		})();
+	</script>
+</head>
+
+<body>
+<div id="main">
+<div id="leftWrapper">
+	<div id="left">
+		<a href="index.html" title="Overview"><span>Overview</span></a>
+
+		<div id="entities">
+
+			<h3>Namespaces</h3>
+			<ul>
+				<li class="active"><a href="namespace-FSHL.html">FSHL</a>
+						<span></span>
+						<ul>
+				<li><a href="namespace-FSHL.Lexer.html">Lexer</a>
+						</li>
+				<li><a href="namespace-FSHL.Output.html">Output</a>
+						</li>
+							</ul></li>
+			</ul>
+
+			<hr />
+
+			<h3>Classes</h3>
+			<ul>
+				<li><a href="class-FSHL.Generator.html">Generator</a></li>
+				<li class="active"><a href="class-FSHL.Highlighter.html">Highlighter</a></li>
+			</ul>
+
+			<h3>Interfaces</h3>
+			<ul>
+				<li><a href="class-FSHL.Lexer.html">Lexer</a></li>
+				<li><a href="class-FSHL.Output.html">Output</a></li>
+			</ul>
+
+
+
+		</div>
+	</div>
+</div>
+<div id="rightWrapper">
+	<div id="right">
+		<form id="search">
+			<input type="hidden" name="cx" value="" />
+			<input type="hidden" name="ie" value="UTF-8" />
+			<input type="text" name="q" class="text" />
+			<input type="submit" value="Search" />
+		</form>
+
+		<div id="navigation">
+			<ul>
+				<li>
+					<a href="index.html" title="Overview"><span>Overview</span></a>
+				</li>
+				<li>
+					<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
+				</li>
+				<li class="active">
+<span>Class</span>				</li>
+			</ul>
+			<ul>
+				<li>
+					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+				</li>
+			</ul>
+		</div>
+
+<div id="content">
+	<h1>Class Highlighter</h1>
+
+	<div class="description">
+	
+<p>Highlighter.</p>
+
+	</div>
+
+
+
+
+
+
+	<div class="info">
+		
+		
+		<b>Namespace:</b> <a href="namespace-FSHL.html">FSHL</a><br />
+
+				<b>Copyright:</b>
+				Copyright (c) 2002-2005 Juraj 'hvge' Durech<br />
+				<b>Copyright:</b>
+				Copyright (c) 2011 Jaroslav Hanslík<br />
+				<b>License:</b>
+				<a
+href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/kukulich/fshl/blob/master/LICENSE</a><br />
+		<b>Located at</b> <a href="source-FSHL.Highlighter.html#26" title="Go to source code">Highlighter.php</a><br />
+	</div>
+
+
+	<table class="summary" id="methods">
+	<caption>Methods summary</caption>
+	<tr data-order="__construct" id="___construct">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#___construct">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Highlighter.html#105" title="Go to source code">__construct</a>(
+				<a href="class-FSHL.Output.html">FSHL\Output</a>
+				
+				<var>$output</var>, 
+				integer
+				<var>$options</var> = <code><a href="class-FSHL.Highlighter.html#OPTION_DEFAULT">FSHL\Highlighter::<b>OPTION_DEFAULT</b></a></code>, 
+				integer
+				<var>$tabIndentWidth</var> = <span class="php-num">4</span>
+		)</code>
+
+		<div class="short">
+			Prepares the highlighter.
+		</div>
+
+		<div class="detailed">
+			
+<p>Prepares the highlighter.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$output</var></dt>
+					<dd><code><code><a href="class-FSHL.Output.html">FSHL\Output</a></code></code></dd>
+					<dt><var>$options</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$tabIndentWidth</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="highlight" id="_highlight">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			string
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_highlight">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Highlighter.html#118" title="Go to source code">highlight</a>(
+				string
+				<var>$text</var>, 
+				<a href="class-FSHL.Lexer.html">FSHL\Lexer</a>
+				
+				<var>$lexer</var> = <span class="php-keyword1">null</span>
+		)</code>
+
+		<div class="short">
+			Highlightes a string.
+		</div>
+
+		<div class="detailed">
+			
+<p>Highlightes a string.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$text</var></dt>
+					<dd><code>string</code></dd>
+					<dt><var>$lexer</var></dt>
+					<dd><code><code><a href="class-FSHL.Lexer.html">FSHL\Lexer</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code>string</code><br />
+				</div>
+
+				<h4>Throws</h4>
+				<div class="smallList">
+					<code>RuntimeException</code><br />If no lexer is set.<br />
+				</div>
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOutput" id="_setOutput">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setOutput">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Highlighter.html#300" title="Go to source code">setOutput</a>(
+				<a href="class-FSHL.Output.html">FSHL\Output</a>
+				
+				<var>$output</var>
+		)</code>
+
+		<div class="short">
+			Sets the output mode.
+		</div>
+
+		<div class="detailed">
+			
+<p>Sets the output mode.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$output</var></dt>
+					<dd><code><code><a href="class-FSHL.Output.html">FSHL\Output</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setOptions" id="_setOptions">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setOptions">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Highlighter.html#313" title="Go to source code">setOptions</a>(
+				integer
+				<var>$options</var> = <code><a href="class-FSHL.Highlighter.html#OPTION_DEFAULT">FSHL\Highlighter::<b>OPTION_DEFAULT</b></a></code>, 
+				integer
+				<var>$tabIndentWidth</var> = <span class="php-num">4</span>
+		)</code>
+
+		<div class="short">
+			Sets options.
+		</div>
+
+		<div class="detailed">
+			
+<p>Sets options.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$options</var></dt>
+					<dd><code>integer</code></dd>
+					<dt><var>$tabIndentWidth</var></dt>
+					<dd><code>integer</code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	<tr data-order="setLexer" id="_setLexer">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			 public 
+			<code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code>
+			
+			</code>
+		</td>
+
+		<td><div class="position">
+		<a class="anchor" href="#_setLexer">#</a>
+		<code class="nowrap">
+				<a href="source-FSHL.Highlighter.html#340" title="Go to source code">setLexer</a>(
+				<a href="class-FSHL.Lexer.html">FSHL\Lexer</a>
+				
+				<var>$lexer</var>
+		)</code>
+
+		<div class="short">
+			Sets the default lexer.
+		</div>
+
+		<div class="detailed">
+			
+<p>Sets the default lexer.</p>
+
+
+
+				<h4>Parameters</h4>
+				<div class="smallList"><dl>
+					<dt><var>$lexer</var></dt>
+					<dd><code><code><a href="class-FSHL.Lexer.html">FSHL\Lexer</a></code></code></dd>
+				</dl></div>
+
+				<h4>Returns</h4>
+				<div class="smallList">
+					<code><code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code></code><br />
+				</div>
+
+
+
+		</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+	<table class="summary" id="constants">
+	<caption>Constants summary</caption>
+	<tr data-order="OPTION_DEFAULT" id="OPTION_DEFAULT">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Highlighter.html#35" title="Go to source code"><b>OPTION_DEFAULT</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0x0000</span></code></td>
+		<td><div class="position">
+			<a href="#OPTION_DEFAULT" class="anchor">#</a>
+			<div class="short">
+				No options.
+			</div>
+
+			<div class="detailed">
+				
+<p>No options.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="OPTION_TAB_INDENT" id="OPTION_TAB_INDENT">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Highlighter.html#42" title="Go to source code"><b>OPTION_TAB_INDENT</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0x0010</span></code></td>
+		<td><div class="position">
+			<a href="#OPTION_TAB_INDENT" class="anchor">#</a>
+			<div class="short">
+				Tab indentation option.
+			</div>
+
+			<div class="detailed">
+				
+<p>Tab indentation option.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	<tr data-order="OPTION_LINE_COUNTER" id="OPTION_LINE_COUNTER">
+
+		<td class="right" width="1%"><code class="nowrap">
+			
+			integer
+		</code></td>
+		<td width="1%"><code>
+				<a href="source-FSHL.Highlighter.html#49" title="Go to source code"><b>OPTION_LINE_COUNTER</b></a>
+		</code></td>
+		<td width="1%"><code><span class="php-num">0x0020</span></code></td>
+		<td><div class="position">
+			<a href="#OPTION_LINE_COUNTER" class="anchor">#</a>
+			<div class="short">
+				Line counter option.
+			</div>
+
+			<div class="detailed">
+				
+<p>Line counter option.</p>
+
+
+			</div>
+		</div></td>
+	</tr>
+	</table>
+
+
+
+
+</div>
+
+		<div id="footer">
+			FSHL - Fast Syntax Highlighter API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
+			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
+		</div>
+	</div>
+</div>
+</div>
+</body>
+</html>
