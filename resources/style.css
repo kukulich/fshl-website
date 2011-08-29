@@ -80,19 +80,31 @@ a.button {
 	margin: 5px 0 5px 20px;
 	padding: 8px 14px 9px;
 	color: #ffffff;
-	background: #95d211 url('button-overlay.png') repeat-x;
+	background-color: #95d211;
+	background-image: -moz-linear-gradient(top, #95d211, #3e981a);
+	background-image: -webkit-linear-gradient(top, #95d211, #3e981a);
+	background-image: -o-linear-gradient(top, #95d211, #3e981a);
+	background-image: -ms-linear-gradient(top, #95d211, #3e981a);
+	background-image: linear-gradient(top, #95d211, #3e981a);
+	border-radius: 6px;
+	background-repeat: repeat-x;
+	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+	box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
 	cursor: pointer;
 	font-size: 110%;
 	line-height: 1;
-	border-radius: 6px;
-	box-shadow: 0 1px 1px rgba(0, 0, 0, .6);
-	text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
 	text-decoration: none;
 	text-indent: 0;
+	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 }
 
 a.button:hover, a.button:active, a.button:focus {
-	background-color: #86b129;
+	background-color: #3e981a;
+	background-image: -moz-linear-gradient(top, #8fcb0e, #307f10);
+	background-image: -webkit-linear-gradient(top, #8fcb0e, #307f10);
+	background-image: -o-linear-gradient(top, #8fcb0e, #307f10);
+	background-image: -ms-linear-gradient(top, #8fcb0e, #307f10);
+	background-image: -linear-gradient(top, #8fcb0e, #307f10);
 }
 
 a.button:active {
