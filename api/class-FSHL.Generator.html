@@ -2,13 +2,17 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.0.3" />
+	<meta name="generator" content="ApiGen 2.1.0" />
 
-	<title>Class FSHL\Generator | FSHL - Fast Syntax Highlighter</title>
+	<title>Class FSHL\Generator | FSHL - Fast Syntax HighLighter</title>
 
-	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
-	<script type="text/javascript" src="elementlist.js?881686471"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?1136902850"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
 
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -24,12 +28,11 @@
 </head>
 
 <body>
-<div id="main">
-<div id="leftWrapper">
-	<div id="left">
+<div id="left">
+	<div id="menu">
 		<a href="index.html" title="Overview"><span>Overview</span></a>
 
-		<div id="entities">
+		<div id="groups">
 
 			<h3>Namespaces</h3>
 			<ul>
@@ -42,9 +45,11 @@
 						</li>
 							</ul></li>
 			</ul>
+		</div>
 
-			<hr />
+		<hr />
 
+		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
 				<li class="active"><a href="class-FSHL.Generator.html">Generator</a></li>
@@ -59,35 +64,39 @@
 
 
 
+
 		</div>
 	</div>
 </div>
-<div id="rightWrapper">
-	<div id="right">
-		<form id="search">
-			<input type="hidden" name="cx" value="" />
-			<input type="hidden" name="ie" value="UTF-8" />
-			<input type="text" name="q" class="text" />
-			<input type="submit" value="Search" />
-		</form>
 
-		<div id="navigation">
-			<ul>
-				<li>
-					<a href="index.html" title="Overview"><span>Overview</span></a>
-				</li>
-				<li>
-					<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
-				</li>
-				<li class="active">
-<span>Class</span>				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
-				</li>
-			</ul>
-		</div>
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
 
 <div id="content">
 	<h1>Class Generator</h1>
@@ -97,6 +106,8 @@
 <p>Generator of lexer cache files.</p>
 
 	</div>
+
+
 
 
 
@@ -113,9 +124,8 @@
 				<b>Copyright:</b>
 				Copyright (c) 2011 Jaroslav Hanslík<br />
 				<b>License:</b>
-				<a
-href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/kukulich/fshl/blob/master/LICENSE</a><br />
-		<b>Located at</b> <a href="source-FSHL.Generator.html#26" title="Go to source code">Generator.php</a><br />
+				<a href="http://fshl.kukulich.cz/#license">http://fshl.kukulich.cz/#license</a><br />
+		<b>Located at</b> <a href="source-class-FSHL.Generator.html#22" title="Go to source code">Generator.php</a><br />
 	</div>
 
 
@@ -123,7 +133,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	<caption>Methods summary</caption>
 	<tr data-order="__construct" id="___construct">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			
@@ -133,18 +143,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#___construct">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Generator.html#245" title="Go to source code">__construct</a>(
-				<a href="class-FSHL.Lexer.html">FSHL\Lexer</a>
-				
-				<var>$lexer</var>
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Generator.html#241" title="Go to source code">__construct</a>( <a href="class-FSHL.Lexer.html"><span class="nowrap">FSHL\Lexer</span></a> <span class="nowrap"><var>$lexer</var></span> )</code>
 
 		<div class="short">
 			Initializes the generator for a given lexer.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Initializes the generator for a given lexer.</p>
 
@@ -153,7 +158,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 				<h4>Parameters</h4>
 				<div class="smallList"><dl>
 					<dt><var>$lexer</var></dt>
-					<dd><code><code><a href="class-FSHL.Lexer.html">FSHL\Lexer</a></code></code><br />$lexerName</dd>
+					<dd><code><code><a href="class-FSHL.Lexer.html">FSHL\Lexer</a></code></code></dd>
 				</dl></div>
 
 
@@ -164,7 +169,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="getSource" id="_getSource">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			string
@@ -174,15 +179,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#_getSource">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Generator.html#257" title="Go to source code">getSource</a>(
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Generator.html#253" title="Go to source code">getSource</a>( )</code>
 
 		<div class="short">
 			Returns the generated source.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Returns the generated source.</p>
 
@@ -201,7 +204,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="saveToCache" id="_saveToCache">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			<code><a href="class-FSHL.Generator.html">FSHL\Generator</a></code>
@@ -211,15 +214,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#_saveToCache">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Generator.html#267" title="Go to source code">saveToCache</a>(
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Generator.html#263" title="Go to source code">saveToCache</a>( )</code>
 
 		<div class="short">
 			Saves the generated source to a lexer cache file.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Saves the generated source to a lexer cache file.</p>
 
@@ -244,25 +245,27 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 
 
+
 	<table class="summary" id="constants">
 	<caption>Constants summary</caption>
 	<tr data-order="BACK" id="BACK">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#35" title="Go to source code"><b>BACK</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#31" title="Go to source code"><b>BACK</b></a>
 		</code></td>
-		<td width="1%"><code>-<span class="php-num">1</span></code></td>
+		<td><code class="wrap">-<span class="php-num">1</span></code></td>
 		<td><div class="position">
 			<a href="#BACK" class="anchor">#</a>
+
 			<div class="short">
 				Delimiter will be returned to the stream (back to the previous position).
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Delimiter will be returned to the stream (back to the previous position).</p>
 
@@ -272,21 +275,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="CURRENT" id="CURRENT">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#42" title="Go to source code"><b>CURRENT</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#38" title="Go to source code"><b>CURRENT</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><code class="wrap"><span class="php-num">0</span></code></td>
 		<td><div class="position">
 			<a href="#CURRENT" class="anchor">#</a>
+
 			<div class="short">
 				Style from current state will be applied on the received delimiter.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Style from current state will be applied on the received delimiter.</p>
 
@@ -296,21 +300,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="NEXT" id="NEXT">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#49" title="Go to source code"><b>NEXT</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#45" title="Go to source code"><b>NEXT</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><code class="wrap"><span class="php-num">1</span></code></td>
 		<td><div class="position">
 			<a href="#NEXT" class="anchor">#</a>
+
 			<div class="short">
 				Style from the new state will be applied on the received delimiter.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Style from the new state will be applied on the received delimiter.</p>
 
@@ -320,21 +325,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_SELF" id="STATE_SELF">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			string
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#56" title="Go to source code"><b>STATE_SELF</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#52" title="Go to source code"><b>STATE_SELF</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-quote">'_SELF'</span></code></td>
+		<td><code class="wrap"><span class="php-quote">'_SELF'</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_SELF" class="anchor">#</a>
+
 			<div class="short">
 				State leading to the current state.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>State leading to the current state.</p>
 
@@ -344,21 +350,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_RETURN" id="STATE_RETURN">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			string
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#63" title="Go to source code"><b>STATE_RETURN</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#59" title="Go to source code"><b>STATE_RETURN</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-quote">'_RETURN'</span></code></td>
+		<td><code class="wrap"><span class="php-quote">'_RETURN'</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_RETURN" class="anchor">#</a>
+
 			<div class="short">
 				State to return to previous state.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>State to return to previous state.</p>
 
@@ -368,21 +375,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_QUIT" id="STATE_QUIT">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			string
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#70" title="Go to source code"><b>STATE_QUIT</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#66" title="Go to source code"><b>STATE_QUIT</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-quote">'_QUIT'</span></code></td>
+		<td><code class="wrap"><span class="php-quote">'_QUIT'</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_QUIT" class="anchor">#</a>
+
 			<div class="short">
 				State to quit the current state.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>State to quit the current state.</p>
 
@@ -392,21 +400,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_FLAG_NONE" id="STATE_FLAG_NONE">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#77" title="Go to source code"><b>STATE_FLAG_NONE</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#73" title="Go to source code"><b>STATE_FLAG_NONE</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><code class="wrap"><span class="php-num">0</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_FLAG_NONE" class="anchor">#</a>
+
 			<div class="short">
 				Default state flag.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Default state flag.</p>
 
@@ -416,21 +425,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_FLAG_KEYWORD" id="STATE_FLAG_KEYWORD">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#84" title="Go to source code"><b>STATE_FLAG_KEYWORD</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#80" title="Go to source code"><b>STATE_FLAG_KEYWORD</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0x0001</span></code></td>
+		<td><code class="wrap"><span class="php-num">0x0001</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_FLAG_KEYWORD" class="anchor">#</a>
+
 			<div class="short">
 				State flag for keyword.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>State flag for keyword.</p>
 
@@ -440,21 +450,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_FLAG_RECURSION" id="STATE_FLAG_RECURSION">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#91" title="Go to source code"><b>STATE_FLAG_RECURSION</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#87" title="Go to source code"><b>STATE_FLAG_RECURSION</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0x0004</span></code></td>
+		<td><code class="wrap"><span class="php-num">0x0004</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_FLAG_RECURSION" class="anchor">#</a>
+
 			<div class="short">
 				State flag for recursion.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>State flag for recursion.</p>
 
@@ -464,21 +475,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_FLAG_NEWLEXER" id="STATE_FLAG_NEWLEXER">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#98" title="Go to source code"><b>STATE_FLAG_NEWLEXER</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#94" title="Go to source code"><b>STATE_FLAG_NEWLEXER</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0x0008</span></code></td>
+		<td><code class="wrap"><span class="php-num">0x0008</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_FLAG_NEWLEXER" class="anchor">#</a>
+
 			<div class="short">
 				State flag for new language.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>State flag for new language.</p>
 
@@ -488,21 +500,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_INDEX_DIAGRAM" id="STATE_INDEX_DIAGRAM">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#105" title="Go to source code"><b>STATE_INDEX_DIAGRAM</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#101" title="Go to source code"><b>STATE_INDEX_DIAGRAM</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><code class="wrap"><span class="php-num">0</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_INDEX_DIAGRAM" class="anchor">#</a>
+
 			<div class="short">
 				Array index for state diagram.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for state diagram.</p>
 
@@ -512,21 +525,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_INDEX_FLAGS" id="STATE_INDEX_FLAGS">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#112" title="Go to source code"><b>STATE_INDEX_FLAGS</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#108" title="Go to source code"><b>STATE_INDEX_FLAGS</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><code class="wrap"><span class="php-num">1</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_INDEX_FLAGS" class="anchor">#</a>
+
 			<div class="short">
 				Array index for state flags.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for state flags.</p>
 
@@ -536,21 +550,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_INDEX_CLASS" id="STATE_INDEX_CLASS">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#119" title="Go to source code"><b>STATE_INDEX_CLASS</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#115" title="Go to source code"><b>STATE_INDEX_CLASS</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">2</span></code></td>
+		<td><code class="wrap"><span class="php-num">2</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_INDEX_CLASS" class="anchor">#</a>
+
 			<div class="short">
 				Array index for state class.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for state class.</p>
 
@@ -560,21 +575,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_INDEX_DATA" id="STATE_INDEX_DATA">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#126" title="Go to source code"><b>STATE_INDEX_DATA</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#122" title="Go to source code"><b>STATE_INDEX_DATA</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">3</span></code></td>
+		<td><code class="wrap"><span class="php-num">3</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_INDEX_DATA" class="anchor">#</a>
+
 			<div class="short">
 				Array index for state data.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for state data.</p>
 
@@ -584,21 +600,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_DIAGRAM_INDEX_STATE" id="STATE_DIAGRAM_INDEX_STATE">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#133" title="Go to source code"><b>STATE_DIAGRAM_INDEX_STATE</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#129" title="Go to source code"><b>STATE_DIAGRAM_INDEX_STATE</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><code class="wrap"><span class="php-num">0</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_DIAGRAM_INDEX_STATE" class="anchor">#</a>
+
 			<div class="short">
 				Array index for new state in state diagram.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for new state in state diagram.</p>
 
@@ -608,21 +625,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="STATE_DIAGRAM_INDEX_MODE" id="STATE_DIAGRAM_INDEX_MODE">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#140" title="Go to source code"><b>STATE_DIAGRAM_INDEX_MODE</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#136" title="Go to source code"><b>STATE_DIAGRAM_INDEX_MODE</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><code class="wrap"><span class="php-num">1</span></code></td>
 		<td><div class="position">
 			<a href="#STATE_DIAGRAM_INDEX_MODE" class="anchor">#</a>
+
 			<div class="short">
 				Array index for mode in state diagram.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for mode in state diagram.</p>
 
@@ -632,21 +650,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="KEYWORD_INDEX_CLASS" id="KEYWORD_INDEX_CLASS">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			interger
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#147" title="Go to source code"><b>KEYWORD_INDEX_CLASS</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#143" title="Go to source code"><b>KEYWORD_INDEX_CLASS</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0</span></code></td>
+		<td><code class="wrap"><span class="php-num">0</span></code></td>
 		<td><div class="position">
 			<a href="#KEYWORD_INDEX_CLASS" class="anchor">#</a>
+
 			<div class="short">
 				Array index for keyword class.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for keyword class.</p>
 
@@ -656,21 +675,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="KEYWORD_INDEX_LIST" id="KEYWORD_INDEX_LIST">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			interger
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#154" title="Go to source code"><b>KEYWORD_INDEX_LIST</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#150" title="Go to source code"><b>KEYWORD_INDEX_LIST</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">1</span></code></td>
+		<td><code class="wrap"><span class="php-num">1</span></code></td>
 		<td><div class="position">
 			<a href="#KEYWORD_INDEX_LIST" class="anchor">#</a>
+
 			<div class="short">
 				Array index for list of keywords.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for list of keywords.</p>
 
@@ -680,21 +700,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="KEYWORD_INDEX_CASE_SENSITIVE" id="KEYWORD_INDEX_CASE_SENSITIVE">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			interger
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#161" title="Go to source code"><b>KEYWORD_INDEX_CASE_SENSITIVE</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#157" title="Go to source code"><b>KEYWORD_INDEX_CASE_SENSITIVE</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">2</span></code></td>
+		<td><code class="wrap"><span class="php-num">2</span></code></td>
 		<td><div class="position">
 			<a href="#KEYWORD_INDEX_CASE_SENSITIVE" class="anchor">#</a>
+
 			<div class="short">
 				Array index for information if keywords are case-sensitive.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Array index for information if keywords are case-sensitive.</p>
 
@@ -704,21 +725,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="CASE_SENSITIVE" id="CASE_SENSITIVE">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			boolean
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#168" title="Go to source code"><b>CASE_SENSITIVE</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#164" title="Go to source code"><b>CASE_SENSITIVE</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-keyword1">true</span></code></td>
+		<td><code class="wrap"><span class="php-keyword1">true</span></code></td>
 		<td><div class="position">
 			<a href="#CASE_SENSITIVE" class="anchor">#</a>
+
 			<div class="short">
 				Flag case-sensitive.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Flag case-sensitive.</p>
 
@@ -728,21 +750,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="CASE_INSENSITIVE" id="CASE_INSENSITIVE">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			boolean
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Generator.html#175" title="Go to source code"><b>CASE_INSENSITIVE</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Generator.html#171" title="Go to source code"><b>CASE_INSENSITIVE</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-keyword1">false</span></code></td>
+		<td><code class="wrap"><span class="php-keyword1">false</span></code></td>
 		<td><div class="position">
 			<a href="#CASE_INSENSITIVE" class="anchor">#</a>
+
 			<div class="short">
 				Flag case-insensitive.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Flag case-insensitive.</p>
 
@@ -757,10 +780,8 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 </div>
 
-		<div id="footer">
-			FSHL - Fast Syntax Highlighter API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
-			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
-		</div>
+	<div id="footer">
+		FSHL - Fast Syntax HighLighter API documentation generated by <a href="http://apigen.org">ApiGen</a>.
 	</div>
 </div>
 </div>

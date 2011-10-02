@@ -2,13 +2,17 @@
 <html>
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-	<meta name="generator" content="ApiGen 2.0.3" />
+	<meta name="generator" content="ApiGen 2.1.0" />
 
-	<title>Class FSHL\Highlighter | FSHL - Fast Syntax Highlighter</title>
+	<title>Class FSHL\Highlighter | FSHL - Fast Syntax HighLighter</title>
 
-	<script type="text/javascript" src="resources/combined.js?4060439551"></script>
-	<script type="text/javascript" src="elementlist.js?881686471"></script>
-	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?1518964193" />
+	<script type="text/javascript" src="resources/combined.js?37748604"></script>
+	<script type="text/javascript" src="elementlist.js?1136902850"></script>
+	<script type="text/javascript">
+		var ApiGen = ApiGen || {};
+		ApiGen.options = {"elementDetailsCollapsed":true};
+	</script>
+	<link rel="stylesheet" type="text/css" media="all" href="resources/style.css?2490775220" />
 
 	<script type="text/javascript">
 		var _gaq = _gaq || [];
@@ -24,12 +28,11 @@
 </head>
 
 <body>
-<div id="main">
-<div id="leftWrapper">
-	<div id="left">
+<div id="left">
+	<div id="menu">
 		<a href="index.html" title="Overview"><span>Overview</span></a>
 
-		<div id="entities">
+		<div id="groups">
 
 			<h3>Namespaces</h3>
 			<ul>
@@ -42,9 +45,11 @@
 						</li>
 							</ul></li>
 			</ul>
+		</div>
 
-			<hr />
+		<hr />
 
+		<div id="elements">
 			<h3>Classes</h3>
 			<ul>
 				<li><a href="class-FSHL.Generator.html">Generator</a></li>
@@ -59,35 +64,39 @@
 
 
 
+
 		</div>
 	</div>
 </div>
-<div id="rightWrapper">
-	<div id="right">
-		<form id="search">
-			<input type="hidden" name="cx" value="" />
-			<input type="hidden" name="ie" value="UTF-8" />
-			<input type="text" name="q" class="text" />
-			<input type="submit" value="Search" />
-		</form>
 
-		<div id="navigation">
-			<ul>
-				<li>
-					<a href="index.html" title="Overview"><span>Overview</span></a>
-				</li>
-				<li>
-					<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
-				</li>
-				<li class="active">
-<span>Class</span>				</li>
-			</ul>
-			<ul>
-				<li>
-					<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
-				</li>
-			</ul>
-		</div>
+<div id="splitter"></div>
+
+<div id="right">
+<div id="rightInner">
+	<form id="search">
+		<input type="hidden" name="cx" value="" />
+		<input type="hidden" name="ie" value="UTF-8" />
+		<input type="text" name="q" class="text" />
+		<input type="submit" value="Search" />
+	</form>
+
+	<div id="navigation">
+		<ul>
+			<li>
+				<a href="index.html" title="Overview"><span>Overview</span></a>
+			</li>
+			<li>
+				<a href="namespace-FSHL.html" title="Summary of FSHL"><span>Namespace</span></a>
+			</li>
+			<li class="active">
+<span>Class</span>			</li>
+		</ul>
+		<ul>
+			<li>
+				<a href="tree.html" title="Tree view of classes, interfaces and exceptions"><span>Tree</span></a>
+			</li>
+		</ul>
+	</div>
 
 <div id="content">
 	<h1>Class Highlighter</h1>
@@ -97,6 +106,8 @@
 <p>Highlighter.</p>
 
 	</div>
+
+
 
 
 
@@ -113,9 +124,8 @@
 				<b>Copyright:</b>
 				Copyright (c) 2011 Jaroslav Hanslík<br />
 				<b>License:</b>
-				<a
-href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/kukulich/fshl/blob/master/LICENSE</a><br />
-		<b>Located at</b> <a href="source-FSHL.Highlighter.html#26" title="Go to source code">Highlighter.php</a><br />
+				<a href="http://fshl.kukulich.cz/#license">http://fshl.kukulich.cz/#license</a><br />
+		<b>Located at</b> <a href="source-class-FSHL.Highlighter.html#22" title="Go to source code">Highlighter.php</a><br />
 	</div>
 
 
@@ -123,7 +133,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	<caption>Methods summary</caption>
 	<tr data-order="__construct" id="___construct">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			
@@ -133,22 +143,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#___construct">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Highlighter.html#105" title="Go to source code">__construct</a>(
-				<a href="class-FSHL.Output.html">FSHL\Output</a>
-				
-				<var>$output</var>, 
-				integer
-				<var>$options</var> = <code><a href="class-FSHL.Highlighter.html#OPTION_DEFAULT">FSHL\Highlighter::<b>OPTION_DEFAULT</b></a></code>, 
-				integer
-				<var>$tabIndentWidth</var> = <span class="php-num">4</span>
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Highlighter.html#101" title="Go to source code">__construct</a>( <a href="class-FSHL.Output.html"><span class="nowrap">FSHL\Output</span></a> <span class="nowrap"><var>$output</var></span>, integer <span class="nowrap"><var>$options</var> = <code><a href="class-FSHL.Highlighter.html#OPTION_DEFAULT">FSHL\Highlighter::<b>OPTION_DEFAULT</b></a></code></span>, integer <span class="nowrap"><var>$tabIndentWidth</var> = <span class="php-num">4</span></span> )</code>
 
 		<div class="short">
 			Prepares the highlighter.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Prepares the highlighter.</p>
 
@@ -172,7 +173,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="highlight" id="_highlight">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			string
@@ -182,20 +183,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#_highlight">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Highlighter.html#118" title="Go to source code">highlight</a>(
-				string
-				<var>$text</var>, 
-				<a href="class-FSHL.Lexer.html">FSHL\Lexer</a>
-				
-				<var>$lexer</var> = <span class="php-keyword1">null</span>
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Highlighter.html#114" title="Go to source code">highlight</a>( string <span class="nowrap"><var>$text</var></span>, <a href="class-FSHL.Lexer.html"><span class="nowrap">FSHL\Lexer</span></a> <span class="nowrap"><var>$lexer</var> = <span class="php-keyword1">null</span></span> )</code>
 
 		<div class="short">
 			Highlightes a string.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Highlightes a string.</p>
 
@@ -225,7 +219,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="setOutput" id="_setOutput">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			<code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code>
@@ -235,18 +229,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#_setOutput">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Highlighter.html#300" title="Go to source code">setOutput</a>(
-				<a href="class-FSHL.Output.html">FSHL\Output</a>
-				
-				<var>$output</var>
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Highlighter.html#296" title="Go to source code">setOutput</a>( <a href="class-FSHL.Output.html"><span class="nowrap">FSHL\Output</span></a> <span class="nowrap"><var>$output</var></span> )</code>
 
 		<div class="short">
 			Sets the output mode.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Sets the output mode.</p>
 
@@ -270,7 +259,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="setOptions" id="_setOptions">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			<code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code>
@@ -280,19 +269,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#_setOptions">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Highlighter.html#313" title="Go to source code">setOptions</a>(
-				integer
-				<var>$options</var> = <code><a href="class-FSHL.Highlighter.html#OPTION_DEFAULT">FSHL\Highlighter::<b>OPTION_DEFAULT</b></a></code>, 
-				integer
-				<var>$tabIndentWidth</var> = <span class="php-num">4</span>
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Highlighter.html#309" title="Go to source code">setOptions</a>( integer <span class="nowrap"><var>$options</var> = <code><a href="class-FSHL.Highlighter.html#OPTION_DEFAULT">FSHL\Highlighter::<b>OPTION_DEFAULT</b></a></code></span>, integer <span class="nowrap"><var>$tabIndentWidth</var> = <span class="php-num">4</span></span> )</code>
 
 		<div class="short">
 			Sets options.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Sets options.</p>
 
@@ -318,7 +301,7 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="setLexer" id="_setLexer">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			 public 
 			<code><a href="class-FSHL.Highlighter.html">FSHL\Highlighter</a></code>
@@ -328,18 +311,13 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 		<td><div class="position">
 		<a class="anchor" href="#_setLexer">#</a>
-		<code class="nowrap">
-				<a href="source-FSHL.Highlighter.html#340" title="Go to source code">setLexer</a>(
-				<a href="class-FSHL.Lexer.html">FSHL\Lexer</a>
-				
-				<var>$lexer</var>
-		)</code>
+		<code class="wrap"><a href="source-class-FSHL.Highlighter.html#336" title="Go to source code">setLexer</a>( <a href="class-FSHL.Lexer.html"><span class="nowrap">FSHL\Lexer</span></a> <span class="nowrap"><var>$lexer</var></span> )</code>
 
 		<div class="short">
 			Sets the default lexer.
 		</div>
 
-		<div class="detailed">
+		<div class="detailed hidden">
 			
 <p>Sets the default lexer.</p>
 
@@ -365,25 +343,27 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 
 
+
 	<table class="summary" id="constants">
 	<caption>Constants summary</caption>
 	<tr data-order="OPTION_DEFAULT" id="OPTION_DEFAULT">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Highlighter.html#35" title="Go to source code"><b>OPTION_DEFAULT</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Highlighter.html#31" title="Go to source code"><b>OPTION_DEFAULT</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0x0000</span></code></td>
+		<td><code class="wrap"><span class="php-num">0x0000</span></code></td>
 		<td><div class="position">
 			<a href="#OPTION_DEFAULT" class="anchor">#</a>
+
 			<div class="short">
 				No options.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>No options.</p>
 
@@ -393,21 +373,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="OPTION_TAB_INDENT" id="OPTION_TAB_INDENT">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Highlighter.html#42" title="Go to source code"><b>OPTION_TAB_INDENT</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Highlighter.html#38" title="Go to source code"><b>OPTION_TAB_INDENT</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0x0010</span></code></td>
+		<td><code class="wrap"><span class="php-num">0x0010</span></code></td>
 		<td><div class="position">
 			<a href="#OPTION_TAB_INDENT" class="anchor">#</a>
+
 			<div class="short">
 				Tab indentation option.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Tab indentation option.</p>
 
@@ -417,21 +398,22 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 	</tr>
 	<tr data-order="OPTION_LINE_COUNTER" id="OPTION_LINE_COUNTER">
 
-		<td class="right" width="1%"><code class="nowrap">
+		<td class="right min"><code class="nowrap">
 			
 			integer
 		</code></td>
-		<td width="1%"><code>
-				<a href="source-FSHL.Highlighter.html#49" title="Go to source code"><b>OPTION_LINE_COUNTER</b></a>
+		<td class="min"><code>
+				<a href="source-class-FSHL.Highlighter.html#45" title="Go to source code"><b>OPTION_LINE_COUNTER</b></a>
 		</code></td>
-		<td width="1%"><code><span class="php-num">0x0020</span></code></td>
+		<td><code class="wrap"><span class="php-num">0x0020</span></code></td>
 		<td><div class="position">
 			<a href="#OPTION_LINE_COUNTER" class="anchor">#</a>
+
 			<div class="short">
 				Line counter option.
 			</div>
 
-			<div class="detailed">
+			<div class="detailed hidden">
 				
 <p>Line counter option.</p>
 
@@ -446,10 +428,8 @@ href="https://github.com/kukulich/fshl/blob/master/LICENSE">https://github.com/k
 
 </div>
 
-		<div id="footer">
-			FSHL - Fast Syntax Highlighter API documentation generated by <a href="http://github.com/apigen/apigen">ApiGen</a>.<br />
-			Generated using the <a href="https://github.com/Andrewsville/PHP-Token-Reflection" title="All your tokens are belong to us">TokenReflection</a> library.
-		</div>
+	<div id="footer">
+		FSHL - Fast Syntax HighLighter API documentation generated by <a href="http://apigen.org">ApiGen</a>.
 	</div>
 </div>
 </div>
