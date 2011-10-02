@@ -33,17 +33,18 @@ h2 {
 	font-size: 140%;
 }
 
-p, ul, form {
-	padding: 0 1ex;
-}
-
-p {
+p, ul {
+	margin: 2ex 1ex;
+	padding: 0;
 	text-align: justify;
 }
 
-ul {
-	margin-left: 1em;
-	text-align: justify;
+li {
+	margin-left: 2ex;
+}
+
+form {
+	margin: 0 1ex;
 }
 
 pre, code {
@@ -53,8 +54,8 @@ pre, code {
 }
 
 pre {
+	margin: 2ex 1ex;
 	padding: .3em .3em .3em 2em;
-	margin: 1ex;
 	white-space: pre-wrap;
 }
 
@@ -86,7 +87,7 @@ a.button {
 	background-image: -o-linear-gradient(top, #95d211, #3e981a);
 	background-image: -ms-linear-gradient(top, #95d211, #3e981a);
 	background-image: linear-gradient(top, #95d211, #3e981a);
-	border-radius: 6px;
+	border-radius: 5px;
 	background-repeat: repeat-x;
 	border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 	box-shadow: 0 1px 1px rgba(0, 0, 0, .5);
@@ -125,7 +126,7 @@ nav {
 	top: 0;
 	left: 0;
 	right: 0;
-	z-index: 10000;
+	z-index: 1000;
 	height: 40px;
 	background-color: #333333;
 	box-shadow: 0 1px 3px rgba(0, 0, 0, .25);
@@ -135,14 +136,17 @@ nav {
 nav ul {
 	margin: 0;
 	padding: 0;
-	list-style: none;
 	display: inline-block;
 }
 
 nav ul li {
 	display: block;
 	float: left;
+	margin: 0;
+	padding: 0;
+	list-style: none;
 	color: #808080;
+	background: none;
 }
 
 nav ul li a, nav ul li a:visited {
@@ -155,14 +159,31 @@ nav ul li a, nav ul li a:visited {
 	text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
 }
 
-nav ul li.active a {
+nav ul li a:hover {
+	background-color: rgba(255, 255, 255, .05);
+	color: #ffffff;
+}
+
+nav ul li.active a, nav ul li.active a:hover {
 	background-color: rgba(0, 0, 0, .5);
 	color: #ffffff;
 }
 
-nav ul li a:hover {
-	background-color: rgba(255, 255, 255, .05);
-	color: #ffffff;
+#fork {
+	z-index: 500;
+	position: absolute;
+	top: 40px;
+	right: 0;
+	display: block;
+	height: 149px;
+	width: 149px;
+	background: transparent url('fork.png') center center no-repeat;
+	text-decoration: none;
+}
+
+#fork span {
+	position: absolute;
+	top: -1000px;
 }
 
 section h3 {
@@ -185,11 +206,7 @@ section#example code {
 }
 
 footer {
-	border-top: 1px solid #d1ccba;
-	text-align: center;
-	margin: 2em 0 0;
-	padding-top: 1em;
-	font-style: italic;
+	margin: 1em 0;
 }
 
 footer p {

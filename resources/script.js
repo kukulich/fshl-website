@@ -1,57 +1,100 @@
 $(function() {
-	// Activate navigation item
 	var $window = $(window);
-	var $navigation = $('nav a');
 	var navigationHeight = $('nav').height();
-	var targets = $navigation.map(function() {
-		return $(this).attr('href');
+	var $links = $('nav a');
+	var sections = {};
+	$links.each(function() {
+		var $this = $(this);
+		var id = $this.attr('href');
+		var $section = $(id);
+		var offset = $section.offset();
+		sections[id] = {
+			link: $this,
+			top: offset.top,
+			bottom: offset.top + $section.height()
+		};
 	});
-	var actual = targets[0];
-	var offsets = $.map(targets, function(target) {
-		return $(target).offset().top;
-	});
+	// First is actual
+	var actual = $links.eq(0).attr('href');
+	// First is on top
+	sections[actual].top = 0;
+	// If scrolling is in progress
+	var inProgress = false;
 
-	function activateTarget(target)
+	function activateSection(id)
 	{
-		if (actual !== target) {
-			$navigation.eq($.inArray(actual, targets)).parent('li').removeClass('active');
-			$navigation.eq($.inArray(target, targets)).parent('li').addClass('active');
-			actual = target;
+		if (actual === id) {
+			return;
 		}
+
+		sections[actual].link.parent('li').removeClass('active');
+		sections[id].link.parent('li').addClass('active');
+		actual = id;
+		window.location.replace(window.location.href.split('#')[0] + '#' + id);
 	}
 
-	function scrollToTarget(target)
+	function scrollToSection(id)
 	{
-		var targetNo = $.inArray(target, targets);
+		if (inProgress) {
+			return;
+		}
+
+		inProgress = true;
 		$('html,body').animate({
-			scrollTop: offsets[targetNo] - navigationHeight - 5
-		}, 'slow', function() {
-			activateTarget(target);
+			scrollTop: sections[id].top - navigationHeight
+		}, {
+			'duration': 'slow',
+			'step': detectSection,
+			'complete': function() {
+				activateSection(id);
+				inProgress = false;
+			}
 		});
 	}
 
-	function scroll()
+	function detectSection()
 	{
-		var scrollTop = $window.scrollTop() + 50;
-		for (var i = offsets.length - 1; i >= 0; i--) {
-			if (scrollTop >= offsets[i]) {
-				activateTarget(targets[i]);
+		var position = $window.scrollTop() + navigationHeight;
+		for (var id in sections) {
+			if (sections[id].top < position && sections[id].bottom > position) {
+				activateSection(id);
 				break;
 			}
 		}
 	}
 
-	$()
-		.add($navigation)
-		.add('#donation a')
-			.click(function() {
-			var target = $(this).attr('href');
-			scrollToTarget(target);
-			window.location.hash = target.substr(1);
-			return false;
+	function checkPosition()
+	{
+		if (!inProgress) {
+			detectSection();
+		}
+	}
+
+	function checkHash()
+	{
+		var hash = window.location.hash.substr(1);
+		if (-1 === hash.indexOf('#')) {
+			hash = '#' + hash;
+		}
+		if (actual === hash) {
+			return;
+		}
+		scrollToSection(hash);
+	}
+
+	$('a[href^="#"]')
+		.click(function(e) {
+			e.preventDefault();
+			var id = $(this).attr('href');
+			scrollToSection(id);
 		});
-	$window.scroll(scroll);
+	$window.scroll(checkPosition);
+	window.setInterval(checkPosition, 300);
+	window.onhashchange = function(e) {
+		e.preventDefault();
+		checkHash();
+	};
 	if (window.location.hash) {
-		scrollToTarget(window.location.hash);
+		checkHash();
 	}
 });
