@@ -170,8 +170,8 @@ nav ul li.active a, nav ul li.active a:hover {
 }
 
 #fork {
-	z-index: 500;
-	position: absolute;
+	z-index: 1000;
+	position: fixed;
 	top: 40px;
 	right: 0;
 	display: block;
